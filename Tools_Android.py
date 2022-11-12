@@ -394,7 +394,8 @@ class DataBase:
             compteur=0
             reader = csv.reader(f , delimiter=';')
             for k in reader:
-                compteur+=1
+                if not k==[]:
+                    compteur+=1
             return compteur
 
     def AlcList(self):

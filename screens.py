@@ -290,6 +290,7 @@ class Drinks(main.Engine, Screen):
         #Stores all drinks and their data
         count=super().getDataBase().LengthDrinkList()
         records=super().getDataBase().DrinkList()
+        records.sort(reverse=True)
 
         for i in range(count):
             #Retrieving Data
